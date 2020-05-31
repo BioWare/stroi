@@ -1,27 +1,48 @@
 body {
+  font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
+  line-height: 20px;
+}
+
+body a {
+  text-decoration: none;
+  color: #9FA2AE;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   top: 0;
   left: 0;
   height: 50px;
   background-color: #3B3F4F;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .header-top__tagline {
-  text-transform: uppercase;
   font-size: 100%;
+  text-transform: uppercase;
   color: #9FA2AE;
 }
 
@@ -29,20 +50,90 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   color: #9FA2AE;
   font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 .header-top__numbers .number {
   margin-left: 20px;
-  margin-right: 100px;
 }
 
-.header-top__stuff {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+.header-phone {
+  margin-top: 2px;
+  color: #FBC01E;
+}
+
+.header-bottom {
+  position: relative;
+  padding: 35px 0 0;
+}
+
+.header-bottom__tagline {
+  position: absolute;
+  text-align: right;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+.header-bottom__tagline span {
+  font-size: 23px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-link {
+  color: #000;
+}
+
+.logo-link span {
+  color: #FBC01E;
+}
+
+.logo-link:hover {
+  color: #000;
+}
+
+.Entrepreneur {
+  font-size: 11px;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherti;
+  padding-left: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 245px;
+}
+
+.button-wrapper .btn {
+  background: #fbc32b;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 14px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: auto;
+}
+
+.button-wrapper .btn:hover {
+  background: #353948;
+  color: #fff;
 }
