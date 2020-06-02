@@ -77,10 +77,23 @@ body a:hover {
   line-height: 30px;
   font-weight: bold;
   max-width: 100%;
+  left: 800px;
+  top: 28px;
 }
 
 .header-bottom__tagline span {
-  font-size: 23px;
+  font-size: 25px;
+}
+
+.header-bottom__tagline:after {
+  background: url("../img/clock.png") 0 0 no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 86px;
+  height: 91px;
+  top: -15px;
+  left: -65px;
 }
 
 .logo {
@@ -115,7 +128,7 @@ body a:hover {
 
 .button-wrapper {
   position: absolute;
-  top: 50%;
+  top: 49%;
   right: 245px;
 }
 
