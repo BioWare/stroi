@@ -1,0 +1,66 @@
+.nav-menu
+  font-size: 15px
+  font-weight: 600
+  color: #333333
+  margin-top: 20px
+  border-top: 1px solid rgb(224, 224, 224)
+  background: rgb(243, 243, 243)
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px
+  // .nav-item
+  //   padding: 10px
+  //   margin: 0
+  //   ul
+  //     visibility: hidden
+  //     position: absolute
+  //     left: 0
+  .nav-item
+    padding: 10px
+.navbar-collapse ul li > ul
+  display: none
+  position: absolute
+.navbar-collapse ul li > ul:hover
+  display: block
+  position: absolute
+  top: 150px
+  left: 0
+
+.header-fixed
+  position: inherited
+  top: 0
+  left: 0
+  animation-name: show_header
+  animation-duration: 1.5s
+  background-color: #333333
+
+@keyframes show_header
+  0%
+    opacity: 0
+    top: -70px
+  100% 
+    opacity: 1
+    top: 0
+
+.btn-search
+  background: #fbc32b
+  border-radius: 5px
+  font-weight: 500
+.btn-search:hover
+  background: #353948
+  color: #fff
+.navbar
+  padding: 0
+.navbar-nav li
+  transition: background-color 200ms ease-out
+  position: relative
+  border-right: 1px solid #e0e0e0
+  margin-top: -1px
+  border-top: 1px solid transparent
+  border-radius: 0
+.navbar-nav > .active
+  background: #FBC01E !important
+  border-color: #FBC01E !important
+.navbar-nav li:hover
+  transition: background-color 200ms ease-out 0s
+  background-color: rgb(230, 230, 230)
+
+  
